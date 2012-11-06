@@ -45,11 +45,17 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @date    November 6, 2012
  */
 
-/** Change the text pointing to the dashboard */
-add_filter( 'bns_login_goto', function(){ return 'Site Admin'; } );
+/** Sanity check - is the plugin active? */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+if ( is_plugin_active( 'bns-login/bns-login.php' ) ) {
 
-/** Change the separator characters */
-add_filter( 'bns_login_separator', function(){ return ' >--< '; } );
+    /** Change the text pointing to the dashboard */
+    add_filter( 'bns_login_goto', function(){ return 'Site Admin'; } );
 
-/** Change the login URL */
-// add_filter( 'bns_login_url', function(){ return 'http://edwardcaissie.com'; } );
+    /** Change the separator characters */
+    add_filter( 'bns_login_separator', function(){ return ' >--< '; } );
+
+    /** Change the login URL */
+    // add_filter( 'bns_login_url', function(){ return 'http://edwardcaissie.com'; } );
+
+}
