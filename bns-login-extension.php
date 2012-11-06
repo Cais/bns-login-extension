@@ -40,6 +40,9 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * The license for this software can also likely be found here:
  * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @since   0.1
+ * @date    November 6, 2012
  */
 
 add_filter( 'bns_login_goto', function(){ return 'Change site settings?'; } );
