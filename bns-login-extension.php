@@ -45,5 +45,11 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @date    November 6, 2012
  */
 
-add_filter( 'bns_login_goto', function(){ return 'Change site settings?'; } );
+/** Change the text pointing to the dashboard */
+add_filter( 'bns_login_goto', function(){ return 'Site Admin'; } );
+
+/** Change the separator characters */
 add_filter( 'bns_login_separator', function(){ return ' >--< '; } );
+
+/** Change the login URL */
+// add_filter( 'bns_login_url', function(){ return 'http://edwardcaissie.com'; } );
