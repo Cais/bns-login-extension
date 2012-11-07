@@ -1,4 +1,4 @@
-=== BNS Login ===
+=== BNS Login Extension ===
 Contributors: cais
 Donate link: http://buynowshop.com/
 Tags: login, dashboard, admin, footer, plugin-only
