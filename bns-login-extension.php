@@ -15,7 +15,6 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * BNS Login Extension
  *
  * @package     BNS_Login_Extension
- * @link        http://buynowshop.com/plugins/
  * @link        https://github.com/Cais/bns-login-extension/
  * @version     0.1
  * @author      Edward Caissie <edward.caissie@gmail.com>
