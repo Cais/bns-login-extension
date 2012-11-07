@@ -50,7 +50,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 if ( is_plugin_active( 'bns-login/bns-login.php' ) ) {
 
     /** Change the text pointing to the dashboard */
-    add_filter( 'bns_login_goto', function(){ return 'Site Admin'; } );
+    add_filter( 'bns_login_goto', function(){ return __( 'Site Admin', 'bns-le' ); } );
 
     /** Change the separator characters */
     add_filter( 'bns_login_separator', function(){ return ' >--< '; } );
@@ -58,4 +58,8 @@ if ( is_plugin_active( 'bns-login/bns-login.php' ) ) {
     /** Change the login URL */
     // add_filter( 'bns_login_url', function(){ return 'http://edwardcaissie.com'; } );
 
+} else {
+    /** @var $exit_message string - Message to display if 'BNS Login' is not activated */
+    $exit_message = __( 'BNS Login Extension requires the BNS Login Plugin to be activated. Please search for "BNS Login" under the Plugins > Add New menu; or, download from http://wordpress.org/extend/plugins/bns-login', 'bns-le' );
+    exit ( $exit_message );
 }
